@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import '../style.css';
 
 export default function Index() {
   return (
