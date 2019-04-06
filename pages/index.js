@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import '../style.css';
+import Nav from '../components/nav';
 
 export default function Index() {
   return (
@@ -36,6 +37,7 @@ export default function Index() {
         <meta property="og:image:height" content="800" />
         <meta name="twitter:card" content="summary" />
       </Head>
+      <Nav />
     </>
   );
 }
