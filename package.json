@@ -2,10 +2,19 @@
   "private": true,
   "name": "cssfx",
   "version": "0.1.0",
-  "description": "Beautiful CSS effects",
+  "description": "Beautifully simple click-to-copy CSS effects",
   "author": "Jonathan Olaleye",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "export": "next build && next export"
+  },
   "repository": "github:jolaleye/cssfx",
-  "bugs": "https://github.com/jolaleye/cssfx/issues"
+  "bugs": "https://github.com/jolaleye/cssfx/issues",
+  "dependencies": {
+    "next": "^8.0.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
 }
