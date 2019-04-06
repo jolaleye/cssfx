@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "name": "cssfx",
+  "version": "0.1.0",
+  "description": "Beautiful CSS effects",
+  "author": "Jonathan Olaleye",
+  "license": "MIT",
+  "scripts": {},
+  "repository": "github:jolaleye/cssfx",
+  "bugs": "https://github.com/jolaleye/cssfx/issues"
+}
