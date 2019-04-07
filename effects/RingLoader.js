@@ -1,11 +1,6 @@
 import { color } from './theme';
 
-export default {
-  name: 'Ring Loader',
-  el: RingLoader
-};
-
-function RingLoader() {
+export default function RingLoader() {
   return (
     <>
       <svg viewBox="25 25 50 50">
