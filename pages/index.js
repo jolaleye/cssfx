@@ -12,7 +12,7 @@ export default function Index() {
           name="description"
           content="Browse a carefully crafted collection of loaders, hover effects, transitions, and other CSS effects to use in your next project. Effects are designed with an emphasis on fluidity, simplicity, and ease of use."
         />
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat:300,400" rel="stylesheet" />
         {/* Favicon */}
         <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
