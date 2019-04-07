@@ -4,5 +4,8 @@ module.exports = {
       display: ['Josefin Sans', 'sans-serif'],
       body: ['Montserrat', 'sans-serif']
     }
+  },
+  variants: {
+    cursor: ['hover']
   }
 };
