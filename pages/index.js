@@ -2,6 +2,7 @@ import Head from 'next/head';
 import '../style.css';
 import Nav from '../components/nav';
 import Header from '../components/header';
+import Grid from '../components/grid';
 
 export default function Index() {
   return (
@@ -41,6 +42,7 @@ export default function Index() {
       </Head>
       <Nav />
       <Header />
+      <Grid />
     </>
   );
 }
