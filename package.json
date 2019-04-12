@@ -12,5 +12,8 @@
   },
   "dependencies": {
     "nuxt": "^2.6.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^0.7.4"
   }
 }
