@@ -1,0 +1,16 @@
+{
+  "name": "cssfx",
+  "version": "0.1.0",
+  "description": "Beautifully simple click-to-copy CSS effects",
+  "author": "Jonathan Olaleye",
+  "license": "MIT",
+  "repository": "github:jolaleye/cssfx",
+  "bugs": "https://github.com/jolaleye/cssfx/issues",
+  "scripts": {
+    "dev": "nuxt",
+    "gen": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.6.1"
+  }
+}
