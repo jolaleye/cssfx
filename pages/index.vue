@@ -40,13 +40,34 @@ export default {
       { property: "og:image:alt", content: "cssfx logo" },
       { property: "og:image:width", content: "1000" },
       { property: "og:image:height", content: "800" },
-      { name: "twitter:card", content: "summary" }
+      { name: "twitter:card", content: "summary" },
+      { name: "msapplication-TileColor", content: "#0d0b1e" },
+      { name: "theme-color", content: "#ffffff" }
     ],
     link: [
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700"
-      }
+      },
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        href: "/apple-touch-icon.png"
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        href: "/favicon-32x32.png"
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        href: "/favicon-16x16.png"
+      },
+      { rel: "manifest", href: "/site.webmanifest" },
+      { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#0d0b1e" }
     ]
   }
 };
