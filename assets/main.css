@@ -15,7 +15,6 @@ body {
 
 /* syntax highlighting */
 .hljs,
-.hljs-tag,
 .hljs-subst {
   color: #f8f8f2;
 }
