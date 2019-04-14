@@ -1,20 +1,20 @@
 <template>
   <div class="container" v-on:click.self="$emit('close')">
     <div class="modal">
-      <div class="html">
+      <div class="html-block">
         <p class="bar">
           <span class="label">HTML</span>
           <span class="copy">COPY</span>
         </p>
-        <pre><code>{{ src.html }}</code></pre>
+        <pre v-highlightjs><code class="html">{{ src.html }}</code></pre>
       </div>
 
-      <div class="css">
+      <div class="css-block">
         <p class="bar">
           <span class="label">CSS</span>
           <span class="copy">COPY</span>
         </p>
-        <pre><code>{{ src.css }}</code></pre>
+        <pre v-highlightjs><code class="css">{{ src.css }}</code></pre>
       </div>
     </div>
     <svg
@@ -70,7 +70,7 @@ export default {
 .modal {
   margin: auto;
   padding: 2em 3em;
-  background-color: hsl(246, 45%, 9%);
+  background-color: hsl(246, 45%, 8%);
   max-width: 90%;
   display: flex;
   flex-flow: column nowrap;
@@ -88,7 +88,7 @@ code {
   line-height: 1.4;
 }
 
-.html {
+.html-block {
   margin-bottom: 2em;
 }
 

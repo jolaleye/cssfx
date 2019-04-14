@@ -11,7 +11,9 @@
     "gen": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.6.1"
+    "highlight.js": "^9.15.6",
+    "nuxt": "^2.6.1",
+    "vue-highlightjs": "^1.3.3"
   },
   "devDependencies": {
     "node-sass": "^4.11.0",
