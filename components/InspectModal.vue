@@ -69,10 +69,9 @@ export default {
 
 .modal {
   margin: auto;
-  padding: 2em;
+  padding: 2em 3em;
   background-color: hsl(246, 45%, 9%);
   max-width: 90%;
-  overflow: auto;
   display: flex;
   flex-flow: column nowrap;
 }
@@ -80,6 +79,7 @@ export default {
 pre {
   background-color: hsla(246, 45%, 7%, 0.9);
   padding: 2em;
+  overflow: scroll;
 }
 
 code {
