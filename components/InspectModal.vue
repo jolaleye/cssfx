@@ -4,7 +4,14 @@
       <div class="html-block">
         <p class="bar">
           <span class="label">HTML</span>
-          <span class="copy">COPY</span>
+          <span class="copy" v-clipboard="() => src.html" v-clipboard:success="onHtmlCopy">
+            COPY
+            <transition name="copied">
+              <svg v-show="htmlCopied" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </transition>
+          </span>
         </p>
         <pre v-highlightjs><code class="html">{{ src.html }}</code></pre>
       </div>
@@ -12,11 +19,19 @@
       <div class="css-block">
         <p class="bar">
           <span class="label">CSS</span>
-          <span class="copy">COPY</span>
+          <span class="copy" v-clipboard="() => src.css" v-clipboard:success="onCssCopy">
+            COPY
+            <transition name="copied">
+              <svg v-show="cssCopied" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </transition>
+          </span>
         </p>
         <pre v-highlightjs><code class="css">{{ src.css }}</code></pre>
       </div>
     </div>
+
     <svg
       v-on:click="$emit('close')"
       class="modal__close"
@@ -31,7 +46,23 @@
 
 <script>
 export default {
-  props: ["src"]
+  props: ["src"],
+  data() {
+    return {
+      htmlCopied: false,
+      cssCopied: false
+    };
+  },
+  methods: {
+    onHtmlCopy() {
+      this.htmlCopied = true;
+      this.cssCopied = false;
+    },
+    onCssCopy() {
+      this.cssCopied = true;
+      this.htmlCopied = false;
+    }
+  }
 };
 </script>
 
@@ -86,6 +117,7 @@ code {
   font-family: "Source Code Pro", monospace;
   font-size: 0.9em;
   line-height: 1.4;
+  color: hsla(0, 0%, 100%, 0.9);
 }
 
 .html-block {
@@ -102,9 +134,42 @@ code {
 
 .copy {
   font-size: 0.8em;
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 
   &:hover {
     cursor: pointer;
+  }
+
+  svg {
+    width: 1.5em;
+    margin-left: 0.5em;
+    fill: none;
+    stroke: #3cefff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transform-origin: center;
+  }
+}
+
+.copied-enter-active {
+  animation: copied 0.5s linear forwards;
+}
+
+@keyframes copied {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 </style>
