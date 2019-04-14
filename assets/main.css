@@ -4,9 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  background-color: hsl(246, 45%, 6%);
+  background-color: hsl(246, 45%, 7%);
   color: white;
   font-family: 'Source Code Pro', monospace;
   font-size: 16px;
+  min-height: 100vh;
 }
