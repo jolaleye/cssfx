@@ -2,15 +2,17 @@
   <div>
     <Navbar/>
     <Header/>
+    <EffectGrid/>
   </div>
 </template>
 
 <script>
 import Navbar from "~/components/Navbar";
 import Header from "~/components/Header";
+import EffectGrid from "~/components/EffectGrid";
 
 export default {
-  components: { Navbar, Header },
+  components: { Navbar, Header, EffectGrid },
   head: {
     title: "cssfx - Beautifully simple click-to-copy CSS effects",
     meta: [
