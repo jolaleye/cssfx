@@ -1,23 +1,43 @@
 <template>
-  <div class="grid">
-    <BaseEffect v-for="effectName in Object.keys(this.effects)" v-bind:key="effectName">
-      <component v-bind:is="effectName"></component>
-    </BaseEffect>
+  <div>
+    <div class="grid">
+      <BaseEffect
+        v-for="effectName in Object.keys(this.effects)"
+        v-bind:key="effectName"
+        v-on:inspect="inspect(effectName)"
+      >
+        <component v-bind:is="effectName"></component>
+      </BaseEffect>
+    </div>
+    <InspectModal v-if="inspectOpen" v-on:close="close" v-bind:src="inspectSrc"/>
   </div>
 </template>
 
 <script>
 import BaseEffect from "~/components/BaseEffect";
+import InspectModal from "~/components/InspectModal";
 import compileEffects from "~/assets/compileEffects.js";
 
 const { effects, components } = compileEffects();
 
 export default {
-  components: { BaseEffect, ...components },
+  components: { BaseEffect, InspectModal, ...components },
   data() {
     return {
-      effects
+      effects,
+      inspectOpen: false,
+      inspectSrc: {}
     };
+  },
+  methods: {
+    inspect(effectName) {
+      this.inspectOpen = true;
+      this.inspectSrc = this.effects[effectName];
+    },
+    close() {
+      this.inspectOpen = false;
+      this.inspectSrc = {};
+    }
   }
 };
 </script>
