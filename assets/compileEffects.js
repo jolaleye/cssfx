@@ -13,11 +13,14 @@ export default function() {
     const html = /<template>(.*?)<\/template>/g // find html between template tags
       .exec(JSON.stringify(raw))[0]
       .replace(/<\/?template>/g, '') // remove template tags
-      .replace(/\\n/g, '\n'); // replace \n with newlines
+      .replace(/^\\n/, '') // remove leading linebreak
+      .replace(/\\n/g, '\n') // replace escape characters
+      .replace(/\\"/g, '"');
 
     const css = /<style scoped>(.*?)<\/style>/g // find css between style tags
       .exec(JSON.stringify(raw))[0]
       .replace(/<\/?style(?: scoped)?>/g, '') // remove style tags
+      .replace(/^\\n/, '') // remove leading linebreak
       .replace(/\\n/g, '\n'); // replace \n with newlines
 
     effects[name] = { html, css };
