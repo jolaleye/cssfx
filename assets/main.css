@@ -6,9 +6,9 @@
 
 html,
 body {
-  background-color: hsl(246, 45%, 7%);
+  background-color: hsl(243, 60%, 8%);
   color: white;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   min-height: 100vh;
 }

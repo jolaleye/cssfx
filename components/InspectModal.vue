@@ -74,7 +74,7 @@ export default {
   left: 0;
   width: 100vw;
   min-height: 100vh;
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: hsla(0, 0%, 0%, 0.3);
   padding: 4em 0;
   display: flex;
 }
@@ -101,20 +101,19 @@ export default {
 .modal {
   margin: auto;
   padding: 2em 3em;
-  background-color: hsl(246, 45%, 8%);
+  background-color: hsl(243, 60%, 8%);
   max-width: 90%;
   display: flex;
   flex-flow: column nowrap;
 }
 
 pre {
-  background-color: hsla(246, 45%, 7%, 0.9);
+  background-color: hsla(246, 45%, 15%, 0.2);
   padding: 2em;
   overflow: scroll;
 }
 
 code {
-  font-family: "Source Code Pro", monospace;
   font-size: 0.9em;
   line-height: 1.4;
   color: hsla(0, 0%, 100%, 0.9);
@@ -129,7 +128,7 @@ code {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75em;
 }
 
 .copy {

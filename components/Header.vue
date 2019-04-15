@@ -14,6 +14,7 @@ header {
 h1 {
   font-size: 1.5em;
   margin-bottom: 1em;
+  letter-spacing: 0.03em;
 }
 
 @media (min-width: "640px") {
@@ -38,7 +39,12 @@ h1 {
   }
 
   h1 {
-    font-size: 1.75em;
+    font-size: 2em;
+    margin-bottom: 0.75em;
+  }
+
+  p {
+    font-size: 1.1em;
   }
 }
 </style>

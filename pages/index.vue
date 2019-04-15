@@ -49,7 +49,7 @@ export default {
     link: [
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700"
+        href: "https://fonts.googleapis.com/css?family=Nunito:400,700"
       },
       {
         rel: "apple-touch-icon",

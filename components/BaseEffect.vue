@@ -12,7 +12,7 @@
   width: 50%;
 
   &:hover {
-    background-color: hsla(246, 45%, 15%, 0.5);
+    background-color: hsla(246, 45%, 15%, 0.2);
     cursor: pointer;
   }
 }
@@ -26,7 +26,7 @@
 @media (min-width: "640px") {
   .outer {
     width: 33.33%;
-    padding: 1em;
+    padding: 1.75em 1em;
   }
 }
 
@@ -39,7 +39,12 @@
 @media (min-width: "1024px") {
   .outer {
     width: 20%;
-    padding: 1em;
+  }
+}
+
+@media (min-width: "1280px") {
+  .outer {
+    width: 16.66%;
   }
 }
 </style>
