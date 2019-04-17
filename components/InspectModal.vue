@@ -72,7 +72,7 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-color: hsla(0, 0%, 0%, 0.3);
   padding: 4em 0;
@@ -110,7 +110,7 @@ export default {
 pre {
   background-color: hsla(246, 45%, 15%, 0.2);
   padding: 2em;
-  overflow: scroll;
+  overflow: auto;
 }
 
 code {
