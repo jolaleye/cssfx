@@ -14,7 +14,7 @@ import EffectGrid from "~/components/EffectGrid";
 export default {
   components: { Navbar, Header, EffectGrid },
   head: {
-    title: "cssfx - Beautifully simple click-to-copy CSS effects",
+    title: "CSSFX - Beautifully simple click-to-copy CSS effects",
     meta: [
       { charset: "utf8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
