@@ -117,6 +117,7 @@ code {
   font-size: 0.9em;
   line-height: 1.4;
   color: hsla(0, 0%, 100%, 0.9);
+  font-family: "Roboto Mono", monospace;
 }
 
 .html-block {
@@ -127,7 +128,7 @@ code {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: 0.75em;
 }
 
