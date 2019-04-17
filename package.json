@@ -11,6 +11,7 @@
     "gen": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/google-analytics": "^2.2.0",
     "highlight.js": "^9.15.6",
     "nuxt": "^2.6.1",
     "v-clipboard": "^2.2.2",
