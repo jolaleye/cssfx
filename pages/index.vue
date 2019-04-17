@@ -25,7 +25,7 @@ export default {
       },
       {
         property: "og:title",
-        content: "cssfx - Beautifully simple click-to-copy CSS effects"
+        content: "CSSFX - Beautifully simple click-to-copy CSS effects"
       },
       {
         property: "og:description",
