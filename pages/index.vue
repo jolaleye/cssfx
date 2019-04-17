@@ -49,7 +49,8 @@ export default {
     link: [
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Nunito:400,700"
+        href:
+          "https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto+Mono"
       },
       {
         rel: "apple-touch-icon",
