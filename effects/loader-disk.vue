@@ -10,19 +10,17 @@ div {
   border-top-color: #fc2f70;
   border-bottom-color: #fc2f70;
   border-radius: 50%;
-  animation: stretch 1s linear alternate infinite, spin 1s ease infinite;
+  animation: spin-stretch 2s ease infinite;
 }
 
-@keyframes stretch {
-  to {
-    width: 1em;
-    height: 1em;
+@keyframes spin-stretch {
+  50% {
+    transform: rotate(360deg) scale(0.33, 0.25);
+    border-width: 8px;
   }
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: rotate(720deg) scale(1, 1);
+    border-width: 3px;
   }
 }
 </style>
