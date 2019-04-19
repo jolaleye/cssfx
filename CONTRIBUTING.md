@@ -22,7 +22,7 @@ Effects are made by adding a Vue component to the `effects/` directory. There ar
 4. Try to match the size of other effects.
 5. If an effect requires interaction, make it clear. For example add a hover effect to the word "Hover".
 
-When you're ready to make your effect, all you have to do is add a Vue component to `effects/`. The `EffectGrid` gathers all the components in this directory using the function in `assets/compileEffects` and lays them out with flexbox. If you figure out some black-magic method of making this process more efficient, be sure to share. 😉
+The `EffectGrid` gathers all the components in `effects/` using the function in `assets/compileEffects` and lays them out with CSS grid. If you figure out some black-magic method of making this process more efficient, be sure to share. 😉
 
 ### Site Improvements
 
