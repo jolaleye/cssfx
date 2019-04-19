@@ -27,25 +27,21 @@
   animation: left-swing 0.5s linear alternate infinite;
 }
 
-.balls div:nth-of-type(2) {
-  background-color: #3cefff;
-}
-
 .balls div:nth-of-type(3) {
-  transform: translateX(-90%);
+  transform: translateX(-95%);
   animation: right-swing 0.5s linear alternate infinite;
 }
 
 @keyframes left-swing {
   50%,
   100% {
-    transform: translateX(99%);
+    transform: translateX(95%);
   }
 }
 
 @keyframes right-swing {
   50% {
-    transform: translateX(-90%);
+    transform: translateX(-95%);
   }
   100% {
     transform: translateX(100%);
