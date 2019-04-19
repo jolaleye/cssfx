@@ -4,7 +4,7 @@
 
 <style scoped>
 div {
-  border: 3px solid hsla(0, 0%, 100%, 0.1);
+  border: 3px solid hsla(185, 100%, 62%, 0.2);
   border-top-color: #3cefff;
   border-radius: 50%;
   width: 4em;
