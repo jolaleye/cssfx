@@ -46,7 +46,8 @@ export default {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1em;
+  grid-column-gap: 1em;
+  grid-row-gap: 2em;
   grid-auto-rows: 6em;
   margin: 0 auto;
   padding: 2em 1em;
@@ -58,7 +59,8 @@ export default {
     padding: 2em 1.5em;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 8em;
-    grid-gap: 1.5em;
+    grid-column-gap: 1.5em;
+    grid-row-gap: 3em;
   }
 }
 
@@ -74,7 +76,6 @@ export default {
     max-width: 1024px;
     padding: 2em;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 2em;
   }
 }
 
@@ -83,7 +84,6 @@ export default {
     max-width: 1280px;
     padding: 2em 3em;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 3em;
   }
 }
 </style>
