@@ -18,11 +18,11 @@ div:before {
   content: '';
   display: block;
   margin: auto;
-  width: 1.5em;
-  height: 1.5em;
-  background-color: #fc2f70;
+  width: 1.25em;
+  height: 1.25em;
+  border: 4px solid #fc2f70;
   border-radius: 50%;
-  animation: pulse 1s alternate ease infinite;
+  animation: pulse 0.8s alternate ease infinite;
 }
 
 @keyframes spin {
@@ -33,7 +33,7 @@ div:before {
 
 @keyframes pulse {
   from {
-    transform: scale(0.6);
+    transform: scale(0.5);
   }
   to {
     transform: scale(1);
