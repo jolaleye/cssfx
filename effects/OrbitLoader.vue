@@ -8,8 +8,8 @@ div {
   width: 4em;
   height: 4em;
   border: 3px solid transparent;
-  border-top: 3px solid #3cefff;
-  border-bottom: 3px solid #3cefff;
+  border-top-color: #3cefff;
+  border-bottom-color: #3cefff;
   border-radius: 50%;
   animation: spin 1.5s linear infinite;
 }
