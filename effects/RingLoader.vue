@@ -6,14 +6,14 @@
 
 <style scoped>
 svg {
-  width: 5em;
+  width: 4.5em;
   transform-origin: center;
   animation: rotate 2s linear infinite;
 }
 
 circle {
   fill: none;
-  stroke: hsl(341, 98%, 59%);
+  stroke: #fc2f70;
   stroke-width: 2;
   stroke-dasharray: 1, 200;
   stroke-dashoffset: 0;
