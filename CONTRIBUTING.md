@@ -18,9 +18,11 @@ Effects are made by adding a Vue component to the `effects/` directory. There ar
 
 1. Do **not** indent the root element in the Vue template. This ensures that the markup is correctly displayed in the inspection modal.
 2. Use as few `.classes` and `#ids` in your template as possible and `scoped` styles. This increases flexibility for users copying effects.
-3. Use the site's red (`#FE2D6F`) & blue (`#3FEAFD`) theme colors as accents alongside whites, grays, and blacks.
+3. Use the site's red (`#fc2f70`) & blue (`#3cefff`) theme colors as accents alongside whites, grays, and blacks.
 4. Try to match the size of other effects.
 5. If an effect requires interaction, make it clear. For example add a hover effect to the word "Hover".
+
+> If your editor automatically formats files on save, it may do things like indent the Vue template or replace single quotes with double quotes. These changes can mess with the source code shown in the inspection modal. To avoid this, either temporarily disable formatting or save without formatting (e.g. in VSCode, open the command palette and choose _File: Save without formatting_).
 
 The `EffectGrid` gathers all the components in `effects/` using the function in `assets/compileEffects` and lays them out with CSS grid. If you figure out some black-magic method of making this process more efficient, be sure to share. 😉
 
