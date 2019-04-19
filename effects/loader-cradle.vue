@@ -1,0 +1,54 @@
+<template>
+<div class="balls">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+</template>
+
+<style scoped>
+.balls {
+  width: 4em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.balls div {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  background-color: #fc2f70;
+}
+
+.balls div:nth-of-type(1) {
+  transform: translateX(-100%);
+  animation: left-swing 0.5s linear alternate infinite;
+}
+
+.balls div:nth-of-type(2) {
+  background-color: #3cefff;
+}
+
+.balls div:nth-of-type(3) {
+  transform: translateX(-90%);
+  animation: right-swing 0.5s linear alternate infinite;
+}
+
+@keyframes left-swing {
+  50%,
+  100% {
+    transform: translateX(99%);
+  }
+}
+
+@keyframes right-swing {
+  50% {
+    transform: translateX(-90%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+</style>
