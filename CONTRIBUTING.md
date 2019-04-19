@@ -17,10 +17,11 @@ The most obvious way to contribute is to add new effects to the CSSFX collection
 Effects are made by adding a Vue component to the `effects/` directory. There are a few guidelines while creating...
 
 1. Do **not** indent the root element in the Vue template. This ensures that the markup is correctly displayed in the inspection modal.
-2. Use as few `.classes` and `#ids` in your template as possible and `scoped` styles. This increases flexibility for users copying effects.
+2. Use as few `.classes` and `#ids` in your template as possible and use `scoped` styles. This increases flexibility for users copying effects.
 3. Use the site's red (`#fc2f70`) & blue (`#3cefff`) theme colors as accents alongside whites, grays, and blacks.
 4. Try to match the size of other effects.
 5. If an effect requires interaction, make it clear. For example add a hover effect to the word "Hover".
+6. Use kebab-case file names prefixed with the effect type (e.g. `loader-ring`). Since effects are collected in alphabetical order, this groups them in the grid.
 
 > If your editor automatically formats files on save, it may do things like indent the Vue template or replace single quotes with double quotes. These changes can mess with the source code shown in the inspection modal. To avoid this, either temporarily disable formatting or save without formatting (e.g. in VSCode, open the command palette and choose _File: Save without formatting_).
 
