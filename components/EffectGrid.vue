@@ -44,23 +44,28 @@ export default {
 
 <style lang="scss" scoped>
 .grid {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  grid-auto-rows: 6em;
   margin: 0 auto;
-  padding: 2em 1.25em;
+  padding: 2em 1em;
 }
 
 @media (min-width: "640px") {
   .grid {
     max-width: 640px;
-    padding: 2em 1.75em;
+    padding: 2em 1.5em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 8em;
+    grid-gap: 1.5em;
   }
 }
 
 @media (min-width: "768px") {
   .grid {
     max-width: 768px;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -68,12 +73,17 @@ export default {
   .grid {
     max-width: 1024px;
     padding: 2em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2em;
   }
 }
 
 @media (min-width: "1280px") {
   .grid {
     max-width: 1280px;
+    padding: 2em 3em;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3em;
   }
 }
 </style>
