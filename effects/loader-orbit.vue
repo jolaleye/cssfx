@@ -20,9 +20,9 @@ div:before {
   margin: auto;
   width: 1.25em;
   height: 1.25em;
-  border: 4px solid #fc2f70;
+  border: 3px solid #3cefff;
   border-radius: 50%;
-  animation: pulse 0.8s alternate ease infinite;
+  animation: pulse 1s alternate ease-in-out infinite;
 }
 
 @keyframes spin {
