@@ -25,3 +25,5 @@ span:hover::before {
   transform: scaleX(1);
 }
 </style>
+
+Thank you @emilkowalski :) https://github.com/emilkowalski
