@@ -1,5 +1,5 @@
 <template>
-  <div class="box" v-on:click="$emit('inspect')">
+  <div class="box" v-on:click.self="$emit('inspect')">
     <slot></slot>
   </div>
 </template>
