@@ -33,6 +33,9 @@
 }
 
 @keyframes wave {
+  from {
+    transform: translateY(-125%);
+  }
   to {
     transform: translateY(125%);
   }
