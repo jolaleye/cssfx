@@ -12,7 +12,7 @@ By contributing to this project, you are expected to uphold the [Code of Conduct
 
 ### New Effects
 
-The most obvious way to contribute is to add new effects to the CSSFX collection. The collection is intended to have variety so feel free to get creative. Still, try to create effects that would be relatively simple and useful in real sites.
+The most obvious way to contribute is to add new effects to the CSSFX collection. The collection is intended to have variety so feel free to get creative.
 
 Effects are made by adding a Vue component to the `effects/` directory. There are a few guidelines while creating...
 
