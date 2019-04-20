@@ -1,0 +1,48 @@
+<template>
+<div>
+  <input type="text" placeholder="Input">
+  <span></span>
+</div>
+</template>
+
+<style scoped>
+div {
+  position: relative;
+}
+
+input {
+  width: 5.5em;
+  color: white;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid hsla(185, 100%, 62%, 0.3);
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #3cefff;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+input:focus ~ span {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+</style>
+
