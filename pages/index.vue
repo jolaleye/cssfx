@@ -2,7 +2,8 @@
   <div>
     <Navbar/>
     <Header/>
-    <EffectGrid/>
+    <EffectGrid v-on:inspect="inspect"/>
+    <InspectModal v-if="inspecting" v-bind:src="inspectSrc" v-on:close="closeInspect"/>
   </div>
 </template>
 
@@ -10,68 +11,35 @@
 import Navbar from "~/components/Navbar";
 import Header from "~/components/Header";
 import EffectGrid from "~/components/EffectGrid";
+import InspectModal from "~/components/InspectModal";
+import { effects } from "~/assets/effects.js";
 
 export default {
-  components: { Navbar, Header, EffectGrid },
-  head: {
-    title: "CSSFX - Beautifully simple click-to-copy CSS effects",
-    meta: [
-      { charset: "utf8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        name: "description",
-        content:
-          "Browse a carefully crafted collection of loaders, hover effects, transitions, and other CSS effects to use in your next project. Effects are designed with an emphasis on fluidity, simplicity, and ease of use."
-      },
-      {
-        property: "og:title",
-        content: "CSSFX - Beautifully simple click-to-copy CSS effects"
-      },
-      {
-        property: "og:description",
-        content:
-          "Browse a carefully crafted collection of loaders, hover effects, transitions, and other CSS effects to use in your next project. Effects are designed with an emphasis on fluidity, simplicity, and ease of use."
-      },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://cssfx.dev" },
-      { property: "og:image", content: "http://cssfx.dev/static/logo.png" },
-      {
-        property: "og:image:secure_url",
-        content: "https://cssfx.dev/static/logo.png"
-      },
-      { property: "og:image:alt", content: "cssfx logo" },
-      { property: "og:image:width", content: "1000" },
-      { property: "og:image:height", content: "800" },
-      { name: "twitter:card", content: "summary" },
-      { name: "msapplication-TileColor", content: "#0d0b1e" },
-      { name: "theme-color", content: "#ffffff" }
-    ],
-    link: [
-      {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto+Mono"
-      },
-      {
-        rel: "apple-touch-icon",
-        sizes: "180x180",
-        href: "/apple-touch-icon.png"
-      },
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "32x32",
-        href: "/favicon-32x32.png"
-      },
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "16x16",
-        href: "/favicon-16x16.png"
-      },
-      { rel: "manifest", href: "/site.webmanifest" },
-      { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#0d0b1e" }
-    ]
+  components: { Navbar, Header, EffectGrid, InspectModal },
+  data() {
+    return {
+      effects,
+      inspecting: false,
+      inspectSrc: {}
+    };
+  },
+  methods: {
+    inspect(effectName) {
+      this.inspecting = true;
+      this.inspectSrc = this.effects[effectName];
+    },
+    closeInspect() {
+      this.inspecting = false;
+      this.inspectSrc = {};
+    }
+  },
+
+  head() {
+    return {
+      bodyAttrs: {
+        class: this.inspecting ? "inspecting" : ""
+      }
+    };
   }
 };
 </script>
