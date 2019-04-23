@@ -17,7 +17,7 @@ input {
   font-family: inherit;
   background-color: transparent;
   border: 1px solid transparent;
-  border-bottom-color: hsla(341, 97%, 59%, 0.3);
+  border-bottom-color: hsla(341, 97%, 59%, 0.2);
 }
 
 input:focus {
