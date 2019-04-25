@@ -25,7 +25,6 @@ button::after {
   bottom: -50%;
   width: 1.25em;
   transform: translateX(-525%) rotate(35deg);
-  transition: transform 0.45s ease-in-out;
 }
 
 button:hover {
@@ -33,6 +32,7 @@ button:hover {
 }
 
 button:hover::after {
+  transition: transform 0.45s ease-in-out;
   transform: translateX(200%) rotate(35deg);
 }
 </style>
