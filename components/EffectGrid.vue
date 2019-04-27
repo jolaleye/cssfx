@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Controls v-on:shuffle="shuffle" v-on:reset="reset"/>
+    <Controls v-on:shuffle="shuffle" v-on:reset="reset" v-on:filter="filter"/>
     <transition-group class="grid" name="shuffle" tag="div">
       <BaseEffect
         v-for="effectName in Object.keys(this.effects)"
@@ -32,6 +32,12 @@ export default {
     },
     reset() {
       this.effects = effects;
+    },
+    filter(filters) {
+      const filtered = Object.entries(effects).filter(
+        ([name, data]) => filters[data.type]
+      );
+      this.effects = Object.fromEntries(filtered);
     }
   }
 };
