@@ -18,7 +18,7 @@ div {
 
 span {
   width: 0.3em;
-  height: 1.25em;
+  height: 1em;
   background-color: #3cefff;
 }
 
@@ -45,7 +45,7 @@ span:nth-of-type(4) {
   }
 
   50% {
-    transform: scaleY(1.8);
+    transform: scaleY(2);
   }
 }
 </style>
