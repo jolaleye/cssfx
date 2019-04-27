@@ -4,8 +4,8 @@
 
 <style scoped>
 div {
-  width: 3em;
-  height: 4em;
+  width: 2.5em;
+  height: 3em;
   border: 3px solid transparent;
   border-top-color: #fc2f70;
   border-bottom-color: #fc2f70;
@@ -15,7 +15,7 @@ div {
 
 @keyframes spin-stretch {
   50% {
-    transform: rotate(360deg) scale(0.33, 0.25);
+    transform: rotate(360deg) scale(0.4, 0.33);
     border-width: 8px;
   }
   100% {
