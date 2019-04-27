@@ -1,6 +1,6 @@
 <template>
 <div>
-  <input type="text" placeholder="Input">
+  <input type="text" placeholder="Underline">
   <span></span>
 </div>
 </template>

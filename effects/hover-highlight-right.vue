@@ -1,5 +1,5 @@
 <template>
-<span>Hover</span>
+<span>Highlight</span>
 </template>
 
 <style scoped>

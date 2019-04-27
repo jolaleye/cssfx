@@ -1,5 +1,5 @@
 <template>
-<span>Hover</span>
+<span>Pillars</span>
 </template>
 
 <style scoped>
@@ -13,28 +13,22 @@ span::before, span::after {
   top: 0;
   bottom: 0;
   width: 2px;
-  background-color: #fc2f70;
+  background-color: #3cefff;
+  transform-origin: center top;
   transform: scaleY(0);
   transition: transform 0.5s ease;
 }
 
 span::before {
   left: -8px;
-  transform-origin: center top;
-}
-
-span:hover::before {
-  transform-origin: center bottom;
-  transform: scaleY(1);
 }
 
 span::after {
   right: -8px;
-  transform-origin: center bottom;
 }
 
-span:hover::after {
-  transform-origin: center top;
+span:hover::before, span:hover::after {
+  transform-origin: center bottom;
   transform: scaleY(1);
 }
 </style>

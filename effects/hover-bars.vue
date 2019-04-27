@@ -1,5 +1,5 @@
 <template>
-<span>Hover</span>
+<span>Bars</span>
 </template>
 
 <style scoped>
@@ -10,13 +10,13 @@ span {
 span::before, span::after {
   content: '';
   position: absolute;
-  left: 50%;
-  width: 100%;
+  left: 0;
+  right: 0;
   height: 2px;
   background-color: #3cefff;
-  transform-origin: center;
-  transform: translateX(-50%) scaleX(0);
-  transition: transform 0.4s ease;
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
 }
 
 span::before {
@@ -28,6 +28,7 @@ span::after {
 }
 
 span:hover::before, span:hover::after {
-  transform: translateX(-50%) scaleX(1);
+  transform-origin: center left;
+  transform: scaleX(1);
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
 <div>
-  <input type="text" placeholder="Input">
+  <input type="text" placeholder="Trace">
   <span class="bottom"></span>
   <span class="right"></span>
   <span class="top"></span>
@@ -36,8 +36,7 @@ input::placeholder {
 span {
   position: absolute;
   background-color: #fc2f70;
-  transform-origin: center;
-  transition: transform 0.5s ease;
+  transition: transform 0.1s ease;
 }
 
 .bottom,
@@ -56,27 +55,46 @@ span {
   transform: scaleY(0);
 }
 
-.top {
-  top: 0;
-}
-
 .bottom {
   bottom: 0;
+  transform-origin: bottom right;
 }
 
-.left {
-  left: 0;
+input:focus ~ .bottom {
+  transform-origin: bottom left;
+  transform: scaleX(1);
 }
 
 .right {
   right: 0;
+  transform-origin: top right;
+  transition-delay: 0.05s;
 }
 
-input:focus ~ .top, input:focus ~ .bottom {
+input:focus ~ .right {
+  transform-origin: bottom right;
+  transform: scaleY(1);
+}
+
+.top {
+  top: 0;
+  transform-origin: top left;
+  transition-delay: 0.15s;
+}
+
+input:focus ~ .top {
+  transform-origin: top right;
   transform: scaleX(1);
 }
 
-input:focus ~ .left, input:focus ~ .right {
+.left {
+  left: 0;
+  transform-origin: bottom left;
+  transition-delay: 0.25s;
+}
+
+input:focus ~ .left {
+  transform-origin: top left;
   transform: scaleY(1);
 }
 </style>

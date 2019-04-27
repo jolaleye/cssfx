@@ -1,6 +1,6 @@
 <template>
 <div>
-  <input type="text" placeholder="Input">
+  <input type="text" placeholder="Outline">
   <span class="bottom"></span>
   <span class="right"></span>
   <span class="top"></span>

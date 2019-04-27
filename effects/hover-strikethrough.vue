@@ -1,5 +1,5 @@
 <template>
-<span>Hover</span>
+<span>Strikethrough</span>
 </template>
 
 <style scoped>
