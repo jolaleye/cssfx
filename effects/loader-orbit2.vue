@@ -7,7 +7,7 @@
 
 <style scoped>
 svg {
-  width: 4.5em;
+  width: 3.75em;
   animation: 1.5s spin ease infinite;
 }
 

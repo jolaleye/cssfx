@@ -24,26 +24,26 @@
 }
 
 .outer {
-  width: 4em;
-  height: 4em;
-  margin-left: -2em;
-  margin-top: -2em;
+  width: 3.5em;
+  height: 3.5em;
+  margin-left: -1.75em;
+  margin-top: -1.75em;
   animation: spin 2s linear infinite;
 }
 
 .middle {
-  width: 2.6em;
-  height: 2.6em;
-  margin-left: -1.3em;
-  margin-top: -1.3em;
+  width: 2.1em;
+  height: 2.1em;
+  margin-left: -1.05em;
+  margin-top: -1.05em;
   animation: spin 1.75s linear reverse infinite;
 }
 
 .inner {
-  width: 1.3em;
-  height: 1.3em;
-  margin-left: -0.65em;
-  margin-top: -0.65em;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: -0.4em;
+  margin-top: -0.4em;
   animation: spin 1.5s linear infinite;
 }
 

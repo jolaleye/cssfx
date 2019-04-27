@@ -6,7 +6,7 @@
 
 <style scoped>
 svg {
-  width: 4.5em;
+  width: 3.75em;
   transform-origin: center;
   animation: rotate 2s linear infinite;
 }

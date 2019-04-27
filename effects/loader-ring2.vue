@@ -7,8 +7,8 @@ div {
   border: 3px solid hsla(185, 100%, 62%, 0.2);
   border-top-color: #3cefff;
   border-radius: 50%;
-  width: 4em;
-  height: 4em;
+  width: 3em;
+  height: 3em;
   animation: spin 1s linear infinite;
 }
 

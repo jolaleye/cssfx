@@ -8,7 +8,7 @@
 
 <style scoped>
 .balls {
-  width: 4em;
+  width: 3.5em;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -20,7 +20,7 @@
   height: 0.8em;
   border-radius: 50%;
   background-color: #fc2f70;
-  transform: translateY(-125%);
+  transform: translateY(-100%);
   animation: wave 0.8s ease-in-out alternate infinite;
 }
 
@@ -34,10 +34,10 @@
 
 @keyframes wave {
   from {
-    transform: translateY(-125%);
+    transform: translateY(-100%);
   }
   to {
-    transform: translateY(125%);
+    transform: translateY(100%);
   }
 }
 </style>
