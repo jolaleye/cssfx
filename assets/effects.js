@@ -6,6 +6,7 @@ const components = {};
 
 for (const filename of effectList) {
   const name = filename.replace('./', '').replace('.vue', '');
+  const type = name.substring(0, name.indexOf('-'));
   const raw = require(`!!raw-loader!~/effects/${name}`).default;
   const component = requireEffect(filename).default;
 
@@ -22,7 +23,7 @@ for (const filename of effectList) {
     .replace(/^\\n/, '') // remove leading linebreak
     .replace(/\\n/g, '\n'); // replace \n with newlines
 
-  effects[name] = { html, css };
+  effects[name] = { type, html, css };
   components[name] = component;
 }
 
