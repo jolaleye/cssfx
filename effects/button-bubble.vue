@@ -14,7 +14,7 @@ button {
   border: none;
   background-color: hsl(246, 45%, 15%);
   overflow: hidden;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 button::before {
@@ -29,7 +29,7 @@ button::before {
   background-color: #3cefff;
   transform-origin: center;
   transform: translate(-50%, -50%) scale(0);
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.45s ease-in-out;
 }
 
 button:hover {
@@ -38,6 +38,6 @@ button:hover {
 }
 
 button:hover::before {
-  transform: translate(-50%, -50%) scale(8);
+  transform: translate(-50%, -50%) scale(15);
 }
 </style>
