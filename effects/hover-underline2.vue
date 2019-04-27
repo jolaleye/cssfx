@@ -14,7 +14,7 @@ span::before {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #fc2f70;
+  background-color: #3cefff;
   transform-origin: bottom left;
   transform: scaleX(1);
   transition: transform 0.3s ease-in-out;
