@@ -11,10 +11,5 @@ export function shuffleEffects(obj) {
     copy[index] = value;
   }
 
-  const newEffects = {};
-  for (const effect of copy) {
-    newEffects[effect[0]] = effect[1];
-  }
-
-  return newEffects;
+  return Object.fromEntries(copy);
 }
