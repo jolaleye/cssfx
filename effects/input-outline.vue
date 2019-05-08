@@ -1,6 +1,6 @@
 <template>
 <div>
-  <input type="text" placeholder="Outline">
+  <input type="text" placeholder="Input Outline">
   <span class="bottom"></span>
   <span class="right"></span>
   <span class="top"></span>
@@ -14,7 +14,7 @@ div {
 }
 
 input {
-  width: 5.5em;
+  width: 6.5em;
   color: white;
   font-size: inherit;
   font-family: inherit;
@@ -30,7 +30,7 @@ input:focus {
 }
 
 input::placeholder {
-  color: hsla(0, 0%, 100%, 0.75);
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 span {
