@@ -11,7 +11,7 @@
   justify-content: center;
 
   &:hover {
-    background-color: hsla(246, 45%, 15%, 0.2);
+    background-color: hsla(246, 41%, 23%, 0.4);
     cursor: pointer;
   }
 }
