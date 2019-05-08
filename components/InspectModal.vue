@@ -103,14 +103,14 @@ export default {
 .modal {
   margin: auto;
   padding: 2em 3em;
-  background-color: hsl(243, 60%, 8%);
+  background-color: hsl(245, 49%, 12%);
   max-width: 90%;
   display: flex;
   flex-flow: column nowrap;
 }
 
 pre {
-  background-color: hsla(246, 45%, 15%, 0.2);
+  background-color: hsla(245, 45%, 27%, 0.2);
   padding: 2em;
   overflow: auto;
 }
