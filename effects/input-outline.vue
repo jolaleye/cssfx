@@ -18,7 +18,7 @@ input {
   color: white;
   font-size: inherit;
   font-family: inherit;
-  background-color: hsla(246, 45%, 15%, 0.4);
+  background-color: hsl(246, 41%, 18%);
   padding: 0.35em 0.45em;
   border: 1px solid transparent;
   transition: background-color 0.3s ease-in-out;
@@ -26,7 +26,6 @@ input {
 
 input:focus {
   outline: none;
-  background-color: hsla(246, 45%, 15%, 1);
 }
 
 input::placeholder {
