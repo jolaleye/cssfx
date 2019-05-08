@@ -12,7 +12,7 @@ button {
   padding: 0.5em 1em;
   outline: none;
   border: none;
-  background-color: hsl(246, 45%, 15%);
+  background-color: hsl(246, 41%, 21%);
   overflow: hidden;
 }
 
