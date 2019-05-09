@@ -3,11 +3,12 @@
     <Controls v-on:shuffle="shuffle" v-on:reset="reset" v-on:filter="filter"/>
     <transition-group class="grid" name="shuffle" tag="div">
       <BaseEffect
-        v-for="effectName in Object.keys(this.effects)"
-        v-bind:key="effectName"
-        v-on:inspect="$emit('inspect', effectName)"
+        v-for="effect in Object.entries(this.effects)"
+        v-bind:key="effect[0]"
+        v-on:inspect="$emit('inspect', effect[0])"
+        v-bind:type="effect[1].type"
       >
-        <component v-bind:is="effectName"></component>
+        <component v-bind:is="effect[0]"></component>
       </BaseEffect>
     </transition-group>
   </div>
