@@ -13,6 +13,10 @@ body {
   min-height: 100vh;
 }
 
+html {
+  overflow-x: auto;
+}
+
 body.inspecting {
   overflow: hidden;
 }
