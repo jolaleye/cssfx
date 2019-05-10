@@ -24,12 +24,12 @@
 
 .balls div:nth-of-type(1) {
   transform: translateX(-100%);
-  animation: left-swing 0.5s linear alternate infinite;
+  animation: left-swing 0.5s ease-in alternate infinite;
 }
 
 .balls div:nth-of-type(3) {
   transform: translateX(-95%);
-  animation: right-swing 0.5s linear alternate infinite;
+  animation: right-swing 0.5s ease-out alternate infinite;
 }
 
 @keyframes left-swing {
