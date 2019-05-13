@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Carbon from "~/components/Carbon";
+import Carbon from "~/components/Carbon.old";
 
 export default {
   components: { Carbon }

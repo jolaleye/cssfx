@@ -15,8 +15,8 @@
 </template>
 
 <script>
-import BaseEffect from "~/components/BaseEffect";
-import Controls from "~/components/Controls";
+import BaseEffect from "~/components/BaseEffect.old";
+import Controls from "~/components/Controls.old";
 import { effects, components } from "~/assets/effects.js";
 import { shuffleEffects } from "~/assets/utils.js";
 

@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import Filters from "~/components/Filters";
+import Filters from "~/components/Filters.old";
 
 export default {
   components: { Filters },

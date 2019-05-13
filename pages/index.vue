@@ -1,45 +1,18 @@
 <template>
   <div>
-    <Navbar/>
-    <Header/>
-    <EffectGrid v-on:inspect="inspect"/>
-    <InspectModal v-if="inspecting" v-bind:src="inspectSrc" v-on:close="closeInspect"/>
+    <div class="color"></div>
   </div>
 </template>
 
-<script>
-import Navbar from "~/components/Navbar";
-import Header from "~/components/Header";
-import EffectGrid from "~/components/EffectGrid";
-import InspectModal from "~/components/InspectModal";
-import { effects } from "~/assets/effects.js";
+<style scoped>
+.color {
+  width: 100vw;
+  height: 0.5em;
+  background: linear-gradient(
+    to right,
+    hsl(185, 100%, 55%),
+    hsl(341, 100%, 55%)
+  );
+}
+</style>
 
-export default {
-  components: { Navbar, Header, EffectGrid, InspectModal },
-  data() {
-    return {
-      effects,
-      inspecting: false,
-      inspectSrc: {}
-    };
-  },
-  methods: {
-    inspect(effectName) {
-      this.inspecting = true;
-      this.inspectSrc = this.effects[effectName];
-    },
-    closeInspect() {
-      this.inspecting = false;
-      this.inspectSrc = {};
-    }
-  },
-
-  head() {
-    return {
-      bodyAttrs: {
-        class: this.inspecting ? "inspecting" : ""
-      }
-    };
-  }
-};
-</script>
