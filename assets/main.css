@@ -4,25 +4,19 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html {
   background-color: hsl(243, 60%, 8%);
   color: white;
-  font-family: 'Nunito', sans-serif;
   font-size: 16px;
-  min-height: 100vh;
-}
-
-html {
   overflow-x: auto;
 }
 
-body.inspecting {
+/* body.inspecting {
   overflow: hidden;
-}
+} */
 
 /* syntax highlighting */
-.hljs,
+/* .hljs,
 .hljs-subst {
   color: #f8f8f2;
 }
@@ -90,4 +84,4 @@ body.inspecting {
 .hljs-deletion,
 .hljs-meta {
   color: #75715e;
-}
+} */
