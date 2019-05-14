@@ -2,64 +2,62 @@
   <header>
     <h1>Beautifully simple click-to-copy CSS effects</h1>
     <p>A carefully crafted collection designed with a focus on fluidity, simplicity, and ease of use. Powered by CSS with minimal markup. Completely open source and MIT licensed.</p>
-    <Carbon/>
   </header>
 </template>
 
-<script>
-import Carbon from "~/components/Carbon.old";
-
-export default {
-  components: { Carbon }
-};
-</script>
-
-
 <style lang="scss" scoped>
 header {
-  padding: 1.5em 1.25em 0.75em 1.25em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   text-align: center;
+  padding: 0 1.5em;
+  margin: 0 auto;
 }
 
 h1 {
-  font-size: 1.5em;
-  margin-bottom: 1em;
-  letter-spacing: 0.03em;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
 }
 
 p {
-  margin-bottom: 2em;
+  font-size: 1.2em;
+  font-weight: 300;
 }
+
+// Responsive styles
 
 @media (min-width: "640px") {
   header {
     max-width: 640px;
-    margin: 0 auto;
-    padding: 1.75em 3em 0.75em 3em;
+    padding: 0 4em;
   }
 }
 
 @media (min-width: "768px") {
   header {
     max-width: 768px;
-    padding: 2em 3em 0.75em 3em;
+    padding: 0 6em;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
   }
 }
 
 @media (min-width: "1024px") {
   header {
-    max-width: 850px;
-    padding: 3em 3em 0.75em 3em;
+    max-width: 1024px;
+    padding: 0 10em;
   }
+}
 
-  h1 {
-    font-size: 2em;
-    margin-bottom: 0.75em;
-  }
-
-  p {
-    font-size: 1.1em;
+@media (min-width: "1280px") {
+  header {
+    max-width: 1280px;
+    padding: 0 12em;
   }
 }
 </style>
-
