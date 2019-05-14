@@ -32,6 +32,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 2em 1.5em;
+  margin: 0 auto;
 }
 
 .logo {
@@ -68,7 +69,8 @@ nav {
 
 @media (min-width: "640px") {
   nav {
-    padding: 2em;
+    max-width: 640px;
+    padding: 2em 2em;
   }
 
   .logo {
@@ -86,19 +88,21 @@ nav {
 
 @media (min-width: "768px") {
   nav {
-    padding: 2em 3em;
+    max-width: 768px;
+    padding: 2.5em 2em;
   }
 }
 
 @media (min-width: "1024px") {
   nav {
-    padding: 3em 8em;
+    max-width: 1024px;
+    padding: 3em 2em;
   }
 }
 
 @media (min-width: "1280px") {
   nav {
-    padding: 3.5em 12em;
+    max-width: 1280px;
   }
 
   .logo {
