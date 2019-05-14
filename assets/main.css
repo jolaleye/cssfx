@@ -7,6 +7,7 @@
 html {
   background-color: hsl(243, 60%, 8%);
   color: white;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   overflow-x: auto;
 }
