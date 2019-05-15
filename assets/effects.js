@@ -23,7 +23,7 @@ for (const filename of effectList) {
     .replace(/^\\n/, '') // remove leading linebreak
     .replace(/\\n/g, '\n'); // replace \n with newlines
 
-  effects[name] = { type, html, css };
+  effects[name] = { name, type, html, css };
   components[name] = component;
 }
 
