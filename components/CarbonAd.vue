@@ -19,6 +19,12 @@ export default {
 };
 </script>
 
+<style scoped>
+div {
+  margin-bottom: 2em;
+}
+</style>
+
 <style>
 #carbonads {
   display: block;
