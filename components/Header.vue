@@ -12,7 +12,7 @@ header {
   align-items: center;
   text-align: center;
   padding: 0 1.5em;
-  margin: 0 auto;
+  margin: 0 auto 2em auto;
 }
 
 h1 {
