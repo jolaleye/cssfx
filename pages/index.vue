@@ -2,14 +2,18 @@
   <div>
     <div class="color"></div>
     <Navbar/>
+    <Header/>
+    <CarbonAd/>
   </div>
 </template>
 
 <script>
 import Navbar from "~/components/Navbar";
+import Header from "~/components/Header";
+import CarbonAd from "~/components/CarbonAd";
 
 export default {
-  components: { Navbar }
+  components: { Navbar, Header, CarbonAd }
 };
 </script>
 

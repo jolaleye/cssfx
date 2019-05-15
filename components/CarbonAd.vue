@@ -1,18 +1,30 @@
 <template>
-  <script
-    id="_carbonads_js"
-    async
-    type="text/javascript"
-    src="//cdn.carbonads.com/carbon.js?serve=CK7DVKQN&placement=cssfxdev"
-  ></script>
+  <div ref="carbonScript"></div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    this.$nextTick(function() {
+      const script = document.createElement("script");
+      script.setAttribute("id", "_carbonads_js");
+      script.setAttribute("type", "text/javascript");
+      script.setAttribute(
+        "src",
+        "//cdn.carbonads.com/carbon.js?serve=CK7DVKQN&placement=cssfxdev"
+      );
+      this.$refs.carbonScript.appendChild(script);
+    });
+  }
+};
+</script>
 
 <style>
 #carbonads {
   display: block;
   overflow: hidden;
-  margin: 0 auto;
   padding: 10px;
+  margin: 0 auto;
   box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.05);
   border-radius: 4px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -21,15 +33,13 @@
   line-height: 1.5;
   max-width: 300px;
   font-size: 12px;
-  /* background-color: #fff; */
-  background-color: hsl(246, 41%, 21%);
-  color: white;
+  background-color: hsl(237, 37%, 24%);
   transform: scale(0.9);
 }
 
 #carbonads a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 #carbonads span {
