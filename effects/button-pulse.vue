@@ -12,7 +12,7 @@ button {
   padding: 0.5em 1em;
   outline: none;
   border: none;
-  background-color: hsl(246, 41%, 21%);
+  background-color: hsl(236, 32%, 26%);
 }
 
 button:hover {
@@ -27,7 +27,7 @@ button::before {
   bottom: 0;
   left: 0;
   right: 0;
-  border: 4px solid hsl(246, 41%, 21%);
+  border: 4px solid hsl(236, 32%, 26%);
   transform-origin: center;
   transform: scale(1);
 }

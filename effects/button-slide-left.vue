@@ -12,7 +12,7 @@ button {
   padding: 0.5em 1em;
   outline: none;
   border: none;
-  background-color: hsl(246, 41%, 21%);
+  background-color: hsl(236, 32%, 26%);
 }
 
 button::before {
