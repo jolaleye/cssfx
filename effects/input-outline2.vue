@@ -18,7 +18,7 @@ input {
   color: white;
   font-size: inherit;
   font-family: inherit;
-  background-color: hsl(246, 41%, 18%);
+  background-color: hsl(236, 32%, 26%);
   padding: 0.35em 0.45em;
   border: 1px solid transparent;
   transition: background-color 0.3s ease-in-out;
