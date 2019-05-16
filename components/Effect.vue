@@ -1,8 +1,26 @@
 <template>
-  <div>
+  <div ref="box" @click="inspect">
     <slot></slot>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    type: String
+  },
+  methods: {
+    inspect(e) {
+      const self = this.$refs.box === e.target;
+
+      // don't accept clicks on an input
+      if (this.type === "input" && !self) return;
+
+      this.$emit("inspect");
+    }
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 div {

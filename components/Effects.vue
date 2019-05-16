@@ -1,6 +1,11 @@
 <template>
   <div class="grid">
-    <Effect v-for="effect in Object.values(this.effects)" :key="effect.name">
+    <Effect
+      v-for="effect in Object.values(this.effects)"
+      :key="effect.name"
+      :type="effect.type"
+      @inspect="$emit('inspect', effect.name)"
+    >
       <component :is="effect.name"/>
     </Effect>
   </div>
