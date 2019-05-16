@@ -55,7 +55,6 @@ export default {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: hsla(0, 0%, 0%, 0.4);
   padding: 2em;
 }
 

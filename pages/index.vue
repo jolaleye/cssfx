@@ -5,7 +5,10 @@
     <Header/>
     <CarbonAd/>
     <Effects :effects="effects" @inspect="inspect"/>
-    <Inspect v-if="inspecting" :src="inspectSrc" @close="closeInspect"/>
+    <div class="inspect-bg" v-if="inspecting"></div>
+    <transition name="inspect">
+      <Inspect v-if="inspecting" :src="inspectSrc" @close="closeInspect"/>
+    </transition>
     <Controls @shuffle="shuffle" @reset="reset" @filter="filter"/>
   </div>
 </template>
@@ -61,5 +64,24 @@ export default {
     hsl(341, 100%, 55%)
   );
 }
-</style>
 
+.inspect-bg {
+  z-index: 998;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+
+.inspect-enter-active,
+.inspect-leave-active {
+  transition: all 0.25s ease-in-out;
+}
+.inspect-enter,
+.inspect-leave-to {
+  opacity: 0;
+  transform: scale(0);
+}
+</style>
