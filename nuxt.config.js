@@ -46,7 +46,7 @@ export default {
     link: [
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Poppins:300,400,600'
+        href: 'https://fonts.googleapis.com/css?family=Poppins:300,400,600|Roboto+Mono'
       },
       {
         rel: 'apple-touch-icon',
