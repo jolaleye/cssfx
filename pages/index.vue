@@ -6,7 +6,7 @@
     <CarbonAd/>
     <Effects :effects="effects" @inspect="inspect"/>
     <Inspect v-if="inspecting" :src="inspectSrc" @close="closeInspect"/>
-    <Controls @shuffle="shuffle" @reset="reset"/>
+    <Controls @shuffle="shuffle" @reset="reset" @filter="filter"/>
   </div>
 </template>
 
@@ -40,6 +40,12 @@ export default {
     },
     reset() {
       this.effects = effects;
+    },
+    filter(filters) {
+      const filtered = Object.entries(effects).filter(
+        ([name, data]) => filters[data.type]
+      );
+      this.effects = Object.fromEntries(filtered);
     }
   }
 };
