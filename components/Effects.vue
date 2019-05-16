@@ -1,5 +1,5 @@
 <template>
-  <div class="grid">
+  <transition-group class="grid" tag="div" name="shuffle">
     <Effect
       v-for="effect in Object.values(this.effects)"
       :key="effect.name"
@@ -8,7 +8,7 @@
     >
       <component :is="effect.name"/>
     </Effect>
-  </div>
+  </transition-group>
 </template>
 
 <script>
@@ -31,6 +31,10 @@ export default {
   grid-gap: 1em;
   padding: 0 1em 5em 1em;
   margin: 0 auto;
+}
+
+.shuffle-move {
+  transition: transform 0.75s ease-out;
 }
 
 // Responsive styles
