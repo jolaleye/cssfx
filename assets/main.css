@@ -12,12 +12,8 @@ html {
   overflow-x: auto;
 }
 
-/* body.inspecting {
-  overflow: hidden;
-} */
-
 /* syntax highlighting */
-/* .hljs,
+.hljs,
 .hljs-subst {
   color: #f8f8f2;
 }
@@ -85,4 +81,4 @@ html {
 .hljs-deletion,
 .hljs-meta {
   color: #75715e;
-} */
+}
