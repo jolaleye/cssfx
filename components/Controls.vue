@@ -34,7 +34,7 @@
       <EffectFilter label="Buttons" v-model="filters.button"/>
       <EffectFilter label="Inputs" v-model="filters.input"/>
       <EffectFilter label="Loaders" v-model="filters.loader"/>
-      <EffectFilter label="Text" v-model="filters.hover"/>
+      <EffectFilter label="Text" v-model="filters.text"/>
     </div>
   </div>
 </template>
@@ -51,7 +51,7 @@ export default {
         button: true,
         input: true,
         loader: true,
-        hover: true
+        text: true
       }
     };
   },
@@ -67,7 +67,7 @@ export default {
     "filters.button": "updateFilters",
     "filters.input": "updateFilters",
     "filters.loader": "updateFilters",
-    "filters.hover": "updateFilters"
+    "filters.text": "updateFilters"
   }
 };
 </script>
