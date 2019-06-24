@@ -14,6 +14,7 @@ button {
   border: none;
   background-color: hsl(236, 32%, 26%);
   overflow: hidden;
+  cursor: pointer;
 }
 
 button::after {
@@ -24,15 +25,11 @@ button::after {
   top: -50%;
   bottom: -50%;
   width: 1.25em;
-  transform: translateX(-525%) rotate(35deg);
-}
-
-button:hover {
-  cursor: pointer;
+  transform: translate3d(-525%, 0, 0) rotate(35deg);
 }
 
 button:hover::after {
   transition: transform 0.45s ease-in-out;
-  transform: translateX(200%) rotate(35deg);
+  transform: translate3d(200%, 0, 0) rotate(35deg);
 }
 </style>
