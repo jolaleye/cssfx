@@ -13,3 +13,15 @@ export function shuffleEffects(obj) {
 
   return Object.fromEntries(copy);
 }
+
+
+// Polifyll to Object.fromEntries
+export function fromEntries(iterable) {
+  return [...iterable]
+    .reduce((obj, {
+      0: key,
+      1: val
+    }) => Object.assign(obj, {
+      [key]: val
+    }), {})
+}

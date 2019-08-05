@@ -21,7 +21,7 @@ import Effects from "~/components/Effects";
 import Inspect from "~/components/Inspect";
 import Controls from "~/components/Controls";
 import { effects } from "~/assets/effects.js";
-import { shuffleEffects } from "~/assets/utils.js";
+import { shuffleEffects, fromEntries } from "~/assets/utils.js";
 
 export default {
   components: { Navbar, Header, CarbonAd, Effects, Inspect, Controls },
@@ -48,7 +48,7 @@ export default {
       const filtered = Object.entries(effects).filter(
         ([name, data]) => filters[data.type]
       );
-      this.effects = Object.fromEntries(filtered);
+      this.effects = fromEntries(filtered);
     }
   }
 };
