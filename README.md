@@ -3,7 +3,7 @@
   <h3 align="center">Beautifully simple click-to-copy CSS effects</h3>
 </p>
 <p align="center">
-  <a href="https://cssfx.dev">https://cssfx.dev</a>
+  <a href="https://cssfx.netlify.app/">https://cssfx.netlify.app/</a>
 </p>
 
 To run locally, `npm install` then `npm run dev`.
