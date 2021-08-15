@@ -12,7 +12,7 @@
       </a>
 
       <a
-        href="https://twitter.com/intent/tweet?url=https://cssfx.dev&text=CSSFX%20-%20A%20collection%20of%20beautifully%20simple%20click-to-copy%20CSS%20effects."
+        href="https://twitter.com/intent/tweet?url=https://cssfx.netlify.app&text=CSSFX%20-%20A%20collection%20of%20beautifully%20simple%20click-to-copy%20CSS%20effects."
         target="_blank"
       >
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
