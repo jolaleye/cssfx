@@ -1,3 +1,15 @@
+
+// Polifyll to Object.fromEntries
+export function fromEntries(iterable) {
+  return [...iterable]
+    .reduce((obj, {
+      0: key,
+      1: val
+    }) => Object.assign(obj, {
+      [key]: val
+    }), {})
+}
+
 export function shuffleEffects(obj) {
   const copy = Object.entries(obj).slice(0);
   const length = copy.length;
@@ -11,5 +23,5 @@ export function shuffleEffects(obj) {
     copy[index] = value;
   }
 
-  return Object.fromEntries(copy);
+  return fromEntries(copy);
 }
